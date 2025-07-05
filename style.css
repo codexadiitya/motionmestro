@@ -1,0 +1,79 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #000;
+  color: #00ffe1;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+header.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(120deg, #0fffc1, #007cf0);
+  color: #000;
+}
+h1 {
+  font-size: 3.2rem;
+  margin: 0;
+  text-shadow: 0 0 10px #fff;
+}
+.tagline {
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
+.cta {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  color: #000;
+  background: #00ffe1;
+  border-radius: 25px;
+  text-decoration: none;
+  box-shadow: 0 0 15px #00ffe1;
+  transition: 0.3s;
+}
+.cta:hover {
+  background: #00bca5;
+  box-shadow: 0 0 25px #00ffe1;
+}
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+section img {
+  max-width: 300px;
+  margin-top: 20px;
+}
+video {
+  width: 90%;
+  max-width: 800px;
+  border: 2px solid #00ffe1;
+  border-radius: 16px;
+  margin-top: 20px;
+}
+.game-links a {
+  display: block;
+  margin: 10px auto;
+  color: #00ffe1;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border: 1px solid #00ffe1;
+  padding: 10px;
+  width: 300px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+.game-links a:hover {
+  background: #00ffe1;
+  color: #000;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: #555;
+}

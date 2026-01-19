@@ -2,113 +2,154 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Motion Maestros - Where Movement Becomes Power</title>
+  <title>Motion Maestros — Where Movement Becomes Power</title>
+
+  <!-- MAIN STYLES -->
   <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header class="hero">
-    <h1>⚡ Motion Maestros ⚡</h1>
-    <p class="tagline">Where Movement Becomes Power</p>
-    <a href="#product" class="cta">Explore the Glove</a>
-  </header>
 
-  <section id="about">
-    <h2>🧠 About Us</h2>
-    <p>We are revolutionizing motion gaming. Our smart glove captures real-time motion and lets you control games like never before. No buttons. Just movement. Full power.</p>
-  </section>
+  <!-- MONSTER MODE STYLES -->
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b0b0b;
+      color: #eaeaea;
+    }
 
-  <section id="product">
-    <h2>🧤 The Glove</h2>
-    <p>Our cutting-edge 3D glove is equipped with flex sensors, IMU, and haptic feedback modules. Designed for maximum immersion in every game you play.</p>
-    <img src="assets/glove.png" alt="3D Glove" />
-  </section>
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: radial-gradient(circle at top, #111, #000);
+    }
 
-  <section id="demo">
-    <h2>🎬 Demo Video</h2>
-    <video controls autoplay loop muted>
-      <source src="assets/demo.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-  </section>
+    .hero h1 { font-size: 3rem; }
+    .tagline { opacity: 0.8; }
 
-  <section id="games">
-    <h2>🎮 Play Games</h2>
-    <div class="game-links">
-      <a href="https://codexaditya.github.io/subway-eunner/" target="_blank">▶ Subway Surfers Clone</a>
-      <a href="#" target="_blank">▶ Hill Climb (Coming Soon)</a>
-    </div>
-  </section>
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
 
-  <section id="contact">
-    <h2>📩 Contact Us</h2>
-    <p>Have questions? Want to partner? Let’s make gaming epic together. Drop us an email: <strong>motionmaestros@gameverse.com</strong></p>
-  </section>
+    img { max-width: 300px; }
 
-<div class="."></div>
-  <footer>
-    <p>© 2025 Motion Maestros. Made with ⚡</p>
-  </footer>
+    video { max-width: 90%; border-radius: 10px; }
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>MotionMonster</title>
-<style>
-  body {
-    background: radial-gradient(circle at top, #0b0b0b, #000);
-    color: #eaeaea;
-    font-family: monospace;
-    text-align: center;
-    padding: 40px;
-  }
-  h1 { color: crimson; }
-  button {
-    padding: 12px 20px;
-    background: crimson;
-    color: white;
-    border: none;
-    cursor: pointer;
-    margin: 10px;
-    font-weight: bold;
-  }
-  #ai, #fake { margin-top: 20px; font-size: 18px; }
-</style>
+    .game-links a {
+      display: block;
+      margin: 10px;
+      color: #ff004f;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      padding: 20px;
+      background: #000;
+      text-align: center;
+      opacity: 0.7;
+    }
+
+    /* 👹 MONSTER MODE */
+    #monster {
+      display: none;
+      padding: 80px 20px;
+      background: black;
+      color: crimson;
+      text-align: center;
+      font-family: monospace;
+    }
+
+    button {
+      padding: 12px 20px;
+      background: crimson;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 
 <body>
 
-<h1>👹 MotionMonster 👹</h1>
-<p>Not a product. A warning.</p>
+<!-- ================= MAIN SITE ================= -->
 
-<div id="fake">⚠ Initializing system…</div>
-<p id="ai"></p>
+<header class="hero">
+  <h1>⚡ Motion Maestros ⚡</h1>
+  <p class="tagline">Where Movement Becomes Power</p>
+  <a href="#product" class="cta">Explore the Glove</a>
+</header>
 
-<button onclick="boom()">DO NOT CLICK</button>
+<section id="about">
+  <h2>🧠 About Us</h2>
+  <p>
+    We are revolutionizing motion gaming.  
+    No buttons. No limits. Just movement.
+  </p>
+</section>
+
+<section id="product">
+  <h2>🧤 The Glove</h2>
+  <p>
+    Smart glove with flex sensors, IMU, and haptics  
+    for full-body immersive gaming.
+  </p>
+  <img src="assets/glove.png" alt="Motion Glove" />
+</section>
+
+<section id="demo">
+  <h2>🎬 Demo Video</h2>
+  <video controls autoplay loop muted>
+    <source src="assets/demo.mp4" type="video/mp4" />
+  </video>
+</section>
+
+<section id="games">
+  <h2>🎮 Play Games</h2>
+  <div class="game-links">
+    <a href="https://codexaditya.github.io/subway-eunner/" target="_blank">
+      ▶ Subway Surfers Clone
+    </a>
+    <a href="#">▶ Hill Climb (Coming Soon)</a>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>📩 Contact</h2>
+  <p>
+    motionmaestros@gameverse.com
+  </p>
+</section>
 
 <footer>
-<p>Built at 3AM. Powered by curiosity.  
-Sleep schedule: ❌ | Sanity: ❌</p>
+  <p>© 2025 Motion Maestros. Made with ⚡</p>
 </footer>
 
-<!--
-If you're reading this source code,
-you already passed the first test.
-Most people never look.
-— Monster
--->
+<!-- ================= MONSTER MODE (HIDDEN) ================= -->
+
+<section id="monster">
+  <h1>👹 MOTION MONSTER 👹</h1>
+  <p id="fake">⚠ Initializing system…</p>
+  <p id="ai"></p>
+  <button onclick="boom()">DO NOT CLICK</button>
+
+  <!--
+  If you're reading this source code,
+  you're already ahead of most devs.
+  — Monster
+  -->
+</section>
+
+<!-- ================= SCRIPTS ================= -->
 
 <script>
 /* 👁️ TAB STALKER */
 document.addEventListener("visibilitychange", () => {
-  document.title = document.hidden ? "👀 Where did you go?" : "😏 You came back";
+  document.title = document.hidden
+    ? "👀 Where did you go?"
+    : "⚡ Motion Maestros";
 });
-
-/* 💣 SELF DESTRUCT */
-function boom() {
-  document.body.style.background = "black";
-  document.body.innerHTML = "<h1>💥 SITE DESTROYED 💥</h1><p>You were warned.</p>";
-}
 
 /* 🤖 FAKE AI */
 const msgs = [
@@ -119,131 +160,42 @@ const msgs = [
 ];
 let i = 0;
 setInterval(() => {
-  document.getElementById("ai").innerText = msgs[i++ % msgs.length];
+  const ai = document.getElementById("ai");
+  if (ai) ai.innerText = msgs[i++ % msgs.length];
 }, 1500);
 
 /* 😈 FAKE ERROR → FLEX */
 setTimeout(() => {
-  document.getElementById("fake").innerText =
-    "✅ System stable. Developer unstable.";
+  const fake = document.getElementById("fake");
+  if (fake) fake.innerText = "✅ System stable. Developer unstable.";
 }, 3000);
 
-/* 🧠 KEYBOARD EASTER EGG */
+/* 🧠 SECRET KEYBOARD EASTER EGG */
 let code = "";
 document.addEventListener("keydown", e => {
   code += e.key.toLowerCase();
   if (code.includes("monster")) {
-    document.body.innerHTML =
-      "<h1 style='color:red'>👹 MONSTER MODE UNLOCKED 👹</h1><p>You know the secret.</p>";
+    document.querySelectorAll("header, section:not(#monster), footer")
+      .forEach(el => el.style.display = "none");
+    document.getElementById("monster").style.display = "block";
   }
-});
-
-/* 🩸 RANDOM CREEPY GLITCH */
-setInterval(() => {
-  if (Math.random() > 0.92) {
-    document.body.style.filter = "invert(1)";
-    setTimeout(() => document.body.style.filter = "invert(0)", 120);
-  }
-}, 800);
-</script>
-
-</body>
-</html>
-<meta charset="UTF-8">
-<title>MotionMonster</title>
-<style>
-  body {
-    background: radial-gradient(circle at top, #0b0b0b, #000);
-    color: #eaeaea;
-    font-family: monospace;
-    text-align: center;
-    padding: 40px;
-  }
-  h1 { color: crimson; }
-  button {
-    padding: 12px 20px;
-    background: crimson;
-    color: white;
-    border: none;
-    cursor: pointer;
-    margin: 10px;
-    font-weight: bold;
-  }
-  #ai, #fake { margin-top: 20px; font-size: 18px; }
-</style>
-</head>
-
-<body>
-
-<h1>👹 MotionMonster 👹</h1>
-<p>Not a product. A warning.</p>
-
-<div id="fake">⚠ Initializing system…</div>
-<p id="ai"></p>
-
-<button onclick="boom()">DO NOT CLICK</button>
-
-<footer>
-<p>Built at 3AM. Powered by curiosity.  
-Sleep schedule: ❌ | Sanity: ❌</p>
-</footer>
-
-<!--
-If you're reading this source code,
-you already passed the first test.
-Most people never look.
-— Monster
--->
-
-<script>
-/* 👁️ TAB STALKER */
-document.addEventListener("visibilitychange", () => {
-  document.title = document.hidden ? "👀 Where did you go?" : "😏 You came back";
 });
 
 /* 💣 SELF DESTRUCT */
 function boom() {
-  document.body.style.background = "black";
-  document.body.innerHTML = "<h1>💥 SITE DESTROYED 💥</h1><p>You were warned.</p>";
+  document.body.innerHTML =
+    "<h1 style='color:red;text-align:center'>💥 SITE DESTROYED 💥</h1>";
 }
 
-/* 🤖 FAKE AI */
-const msgs = [
-  "Scanning visitor...",
-  "Checking intentions...",
-  "Talent detected ⚠",
-  "Verdict: Dangerous developer 💀"
-];
-let i = 0;
+/* 🩸 RANDOM GLITCH */
 setInterval(() => {
-  document.getElementById("ai").innerText = msgs[i++ % msgs.length];
-}, 1500);
-
-/* 😈 FAKE ERROR → FLEX */
-setTimeout(() => {
-  document.getElementById("fake").innerText =
-    "✅ System stable. Developer unstable.";
-}, 3000);
-
-/* 🧠 KEYBOARD EASTER EGG */
-let code = "";
-document.addEventListener("keydown", e => {
-  code += e.key.toLowerCase();
-  if (code.includes("monster")) {
-    document.body.innerHTML =
-      "<h1 style='color:red'>👹 MONSTER MODE UNLOCKED 👹</h1><p>You know the secret.</p>";
-  }
-});
-
-/* 🩸 RANDOM CREEPY GLITCH */
-setInterval(() => {
-  if (Math.random() > 0.92) {
+  if (Math.random() > 0.95) {
     document.body.style.filter = "invert(1)";
     setTimeout(() => document.body.style.filter = "invert(0)", 120);
   }
-}, 800);
+}, 1000);
 </script>
 
-  
 </body>
 </html>
+
